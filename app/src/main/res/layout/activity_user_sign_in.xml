@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:background="@drawable/bg_mb"
+        tools:context=".userSignIn">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/ic_logo"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <EditText
+            android:id="@+id/et_us_username"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/background_light"
+            android:hint="Username"
+            android:textColorHint="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/et_us_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:textColor="@android:color/background_light"
+            android:inputType="textPassword"
+            android:hint="Password"
+            app:fontFamily="@font/quicksand_light"
+            android:textColorHint="@android:color/background_light"/>
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#0075FF"
+            android:text="SIGN IN"
+            android:textColor="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Don't have any account? "
+            android:textColor="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"/>
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#0075FF"
+            android:text="SIGN UP"
+            android:textColor="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"
+            android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/purchae_hardware"
+        android:title="Purchase product"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/repair_laptop"
+        android:title="Repair laptop"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/check_status"
+        android:title="Check status"
+        app:showAsAction="never"/>
+
+</menu>

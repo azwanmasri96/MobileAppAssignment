@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_mb"
+    tools:context=".engineerSignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageButton
+            android:id="@+id/ib_eu_profpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_profilepicture" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Profile Picture"
+            android:textColor="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"/>
+
+        <EditText
+            android:id="@+id/et_eu_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light" />
+        <EditText
+            android:id="@+id/et_eu_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textColorHint="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"/>
+        <EditText
+            android:id="@+id/et_eu_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="Mobile Number"
+            android:textColorHint="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"/>
+        <EditText
+            android:id="@+id/et_eu_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:hint="Address"
+            android:textColorHint="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/sp_eu_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/gender_arrays"
+                android:outlineAmbientShadowColor="@android:color/black" />
+            <EditText
+                android:id="@+id/et_eu_age"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="Age (Optional)"
+                android:textColorHint="@android:color/background_light"
+                app:fontFamily="@font/quicksand_light"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+            android:id="@+id/sp_eu_occupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/occupation_arrays"
+            android:outlineAmbientShadowColor="@android:color/black" />
+            <Spinner
+                android:id="@+id/sp_eu_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/experience_arrays"
+                android:outlineAmbientShadowColor="@android:color/black" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_eu_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"/>
+        <EditText
+            android:id="@+id/et_eu_cpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:textColorHint="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/sp_eu_idcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/idcard_arrays"
+                android:outlineAmbientShadowColor="@android:color/black" />
+            <EditText
+                android:id="@+id/et_eu_idcard"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="ID Number"
+                android:textColorHint="@android:color/background_light"
+                app:fontFamily="@font/quicksand_light"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Upload ID Proof image for Verification"
+            android:textColor="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"/>
+
+        <ImageButton
+            android:id="@+id/ib_eu_idpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_photo"
+            tools:ignore="VectorDrawableCompat"
+            android:background="@android:color/transparent" />
+        <Button
+            android:id="@+id/engineer_btn_signUp"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="#0075FF"
+            android:text="SIGN UP"
+            android:textColor="@android:color/background_light"
+            app:fontFamily="@font/quicksand_light"
+            android:layout_marginBottom="20dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

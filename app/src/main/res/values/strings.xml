@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MobDevAssignment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="input_placeholder">Write a message</string>
+    <string name="no_record_message">No record.</string>
+
+    <string-array name="gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="occupation_arrays">
+        <item>Student</item>
+        <item>Working</item>
+    </string-array>
+
+    <string-array name="experience_arrays">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="idcard_arrays">
+        <item>MyKad</item>
+        <item>Passport</item>
+    </string-array>
+</resources>
