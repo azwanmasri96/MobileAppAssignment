@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.mobdevassignment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".start"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Report_Problem"
+            android:label="Repair"
+            android:parentActivityName=".Main4Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main4Activity" />
+        </activity>
+        <activity
+            android:name=".Main3Activity"
+            android:label="Status"
+            android:parentActivityName=".Main4Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main4Activity" />
+        </activity>
+
+        <activity
+            android:name=".login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Purchase"
+            android:parentActivityName=".Main4Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main4Activity" />
+        </activity>
+        <activity android:name=".Check_Status" />
+        <activity android:name=".Tips" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".Calculator" />
+        <activity android:name=".Job_History" />
+        <activity android:name=".Job_Request" />
+        <activity android:name=".Order_Parts" />
+        <activity android:name=".Chat"></activity>
+        <activity android:name=".userSignIn" />
+        <activity android:name=".engineerSignIn" />
+        <activity android:name=".userSignUp" />
+        <activity android:name=".engineerSignUp" />
+        <activity android:name=".userHome"></activity>
+        <activity android:name=".repairmanHome"></activity>
+        <activity android:name=".Main4Activity"></activity>
+    </application>
+
+</manifest>
